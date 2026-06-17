@@ -30,7 +30,7 @@ weather_data = response.json()
 will_rain = False
 for weather in weather_data["list"]:
     for condition in weather["weather"]:
-        if condition["id"] < 900:
+        if condition["id"] < 800:
             will_rain = True
 if will_rain:
     message = client.messages.create(
