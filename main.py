@@ -12,7 +12,7 @@ client = Client(account_sid, auth_token)
 
 
 Weather_Base_URL = "https://api.openweathermap.org/data/2.5/forecast"
-Weather_API_KEY = "92e1a1d77efc524468f31222359fde37"
+Weather_API_KEY = os.getenv("TWILIO_API_KEY")
 LATITUDE = 51.9522
 LONGITUDE = 5.8484
 
