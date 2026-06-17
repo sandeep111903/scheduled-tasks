@@ -4,15 +4,15 @@ import requests
 from twilio.rest import Client
 
 
-account_sid =  os.getenv("TWILIO_ACCOUNT_SID")
-auth_token = os.getenv("TWILIO_AUTH_TOKEN")
+account_sid =  os.getenv.get("TWILIO_ACCOUNT_SID")
+auth_token = os.getenv.get("TWILIO_AUTH_TOKEN")
 print("SID from env:", account_sid)
 print("Token from env:", auth_token)
 client = Client(account_sid, auth_token)
 
 
 Weather_Base_URL = "https://api.openweathermap.org/data/2.5/forecast"
-Weather_API_KEY = os.getenv("TWILIO_API_KEY")
+Weather_API_KEY = os.getenv.get("TWILIO_API_KEY")
 LATITUDE = 51.9522
 LONGITUDE = 5.8484
 
